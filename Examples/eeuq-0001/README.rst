@@ -73,14 +73,16 @@ To perform a Sampling or Forward propagation uncertainty analysis the user would
       :alt: Screenshot of a Building Model Generator software interface showing a selected file path for an Input Script labeled "ShearBuilding3.tcl", fields for specifying Response Nodes, Spatial Dimension, and Degrees Of Freedom (DOF) at Nodes. There are tabs on the left side for various modules like UQ, GI, SIM, EVT, FEM, EDP, RV, and RES, with SIM currently selected or highlighted. A drop-down menu at the top right corner indicates the software is integrated with or supports OpenSees.
       :figclass: align-center
 
-4. Next select the **EVT** panel. From the **Load Generator** pull-down menu select the **Multiple PEER** option. This will present a panel with three buttons: **Add**, **Remove** and **Load Directory**. Click the **Add** button. Give the motion a name, here enter ``elCentro`` in the first line edit. Now for the motion, enter the path to the ``elCentro.AT2`` motion. Leave the motion acting in the **1** dof direction and for the scale factor in this direction, enter **factorEC**.
+4. Next select the **EVT** panel. From the **Load Generator** pull-down menu select the **Multiple PEER** option. This will present a panel with three buttons: **Add**, **Remove**, and **Load Directory**. Click the **Add** button. Give the motion a name, here enter ``elCentro`` in the first line edit. Now for the motion, enter the path to the ``elCentro.AT2`` motion. Leave the motion acting in the **1** dof direction and for the scale factor in this direction, enter **factorEC**.
 
 .. figure:: figures/shearEVT.png
    :align: center
    :alt: A screenshot of a software interface with a sidebar on the left containing menu items such as UQ, GI, SIM, EVT (highlighted), FEM, EDP, RV, and RES. The main area is titled "Load Generator" and includes a dropdown menu with the option "Multiple PEER" selected, a section titled "List of PEER Events" with a radio button option labeled "elCentro" and another radio button option next to a file path input box. There are buttons labeled "Add," "Remove," and "Load Directory," as well as a "Choose" button next to the file path. At the end, there are input boxes for "DOF" with a value of "1" and a "Factor" labeled "factorEC." The interface appears to be for configuring events, possibly for engineering simulations or analyses.
    :figclass: align-center
 
-5. Next choose the **FEM** panel. Here we will change the entries to use Rayleigh damping, with Rayleigh factor chosen using the first and third modes. For the **MDOF** model generator, because it generates a model with two translational and one rotational degree-of-freedom in each direction and because we have provided the same ``k`` values in each translational direction (i.e. we will have duplicate eigenvalues), we specify as shown in the figure modes **1** and **6**.
+5. Next choose the **FEM** panel. Here we will change the entries to use Rayleigh damping, with Rayleigh factor chosen using the first and third modes. 
+
+For the **MDOF** model generator, which creates a model with two translational and one rotational degree of freedom in each direction, and considering that we have provided the same ``k`` values in each translational direction (resulting in duplicate eigenvalues), we specify modes **1** and **6** as shown in the figure below.
 
 .. figure:: figures/shearFEM.png
    :align: center
@@ -89,7 +91,7 @@ To perform a Sampling or Forward propagation uncertainty analysis the user would
 
 .. note::
 
-   If instead we were using the OpenSees model, which does not have the duplicate eigenvalues, it being a planar problem with constrained degrees-of-freedom, we specify modes **1** and **3** as shown.
+   If, instead of the **MDOF** model generator, we were using an OpenSees model (which does not have duplicate eigenvalues due to this being a planar problem with constrained degrees-of-freedom), we would specify modes **1** and **3** as shown.
 
    .. figure:: figures/shearFEM-OpenSees.png
       :align: center
@@ -215,6 +217,6 @@ After the user fills in the rest of the tabs as per the previous section, the us
 
 .. warning::
 
-   Reliability analysis can only be performed when there is only one EDP.
+   Reliability analysis can be performed only when there is a single EDP.
 
 

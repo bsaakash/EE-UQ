@@ -179,7 +179,7 @@ Run the Analysis and Process Results
          The user can interact with the plot as follows.
 
          - Windows: left-click sets the Y axis (ordinate).  right-click sets the X axis (abscissa).
-         - MAC: fn-clink, option-click, and command-click all set the Y axis (ordinate).  ctrl-click sets the X axis (abscissa).
+         - MAC: fn-click, option-click, and command-click all set the Y axis (ordinate).  ctrl-click sets the X axis (abscissa).
 
    In the scatter plot, the gray square markers represent the mean prediction from the surrogate, gray bounds denote the 90% prediction interval, orange bounds denote the 90% confidence interval of the mean prediction, and blue dots represent the sample obtained from the surrogate prediction. 
 
@@ -203,7 +203,7 @@ The same comparison in the original scale is shown below.
 
    .. figure:: figures/EE10_RES4_2.png
          :name: UQ inputs
-   :alt: The image shows two bar charts side by side. On the left, the chart is titled "Original scale (PSA)" and represents the median PSA values, which range from 0 to 250, for different categories labeled 1-PFA-0-1 to 1-PFA-3-2. The bars are arranged in pairs for each category, with colors alternating between blue and brown. On the right, the chart is titled "Original scale (PFD)" and illustrates the median PFD values, which vary between 0 and 6 for categories labeled 1-PFD-1-1 to 1-PFD-3-2, also with alternating blue and brown bars in pairs. Each pair in both charts likely represents a different condition or measurement within the category.
+         :alt: The image shows two bar charts side by side. On the left, the chart is titled "Original scale (PSA)" and represents the median PSA values, which range from 0 to 250, for different categories labeled 1-PFA-0-1 to 1-PFA-3-2. The bars are arranged in pairs for each category, with colors alternating between blue and brown. On the right, the chart is titled "Original scale (PFD)" and illustrates the median PFD values, which vary between 0 and 6 for categories labeled 1-PFD-1-1 to 1-PFD-3-2, also with alternating blue and brown bars in pairs. Each pair in both charts likely represents a different condition or measurement within the category.
          :align: center
          :width: 700
          :figclass: align-center

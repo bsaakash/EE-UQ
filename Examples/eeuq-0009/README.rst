@@ -211,7 +211,7 @@ Please see the :ref:`User Guide <lblSimSurrogate>` for more details on the verif
          The user can interact with the plot as follows.
 
          - Windows: left-click sets the Y axis (ordinate).  right-click sets the X axis (abscissa).
-         - MAC: fn-clink, option-click, and command-click all set the Y axis (ordinate).  ctrl-click sets the X axis (abscissa).
+         - MAC: fn-click, option-click, and command-click all set the Y axis (ordinate).  ctrl-click sets the X axis (abscissa).
 
 12. The surrogate model can be saved in a json file by clicking the "Save GP Model" button at the bottom of the "Summary" tab. One main file and one auxiliary folder will be saved.
 

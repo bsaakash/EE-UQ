@@ -74,7 +74,7 @@ Design and create a numerical model
    :width: 100%
    :figclass: align-center
 
-5. In the Building Data Files section, clicking the Save File button will automatically generate four modeling data 
+6. In the Building Data Files section, clicking the Save File button will automatically generate four modeling data 
    files in the user-defined location (:eeuq-0004:`ELFParameters.csv <src/Test/ELFParameters.csv>`, 
    :eeuq-0004:`Geometry.csv <src/Test/Geometry.csv>`, :eeuq-0004:`Loads.csv <src/Test/Loads.csv>`, and 
    :eeuq-0004:`MemberDepth.csv <src/Test/MemberDepth.csv>`). These four files store the data from the four discussed 

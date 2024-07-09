@@ -8,7 +8,7 @@ represented by synthetic ground motion records based on two methods ([VPD18]_, [
 
 .. figure:: figures/model2.png
    :align: center
-   :alt: A diagram depicting a three storyone bay  structure with three horizontally aligned rigid beams. The first and second floors have a mass labeled "w". At the top floor, the mass is labeled "w/2". The columns at the based end by a symbol indicating a fixed support.
+   :alt: A diagram depicting a three story one bay structure with three horizontally aligned rigid beams. The first and second floors have a mass labeled "w". At the top floor, the mass is labeled "w/2". The columns at the based end by a symbol indicating a fixed support.
    :width: 400
    :figclass: align-center
 
@@ -23,11 +23,11 @@ The exercise will use the :ref:`lblOpenSeesSIM` structural generators. For the O
 
    Do not place the file in your root, downloads, or desktop folder as when the application runs it will copy the contents on the directories and subdirectories containing this file multiple times (a copy will be made for each sample specified). If you are like us, your root, Downloads or Documents folders contain an awful lot of files and when the backend workflow runs you will slowly find you will run out of disk space!
 
-Vlacho-Papakonstantinou-Deodatis Method
+Vlachos-Papakonstantinou-Deodatis Method
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 We will first demonstrate the steps to perform a sampling analysis to study the effects of earthquake magnitude, site-source distance, and soil velocity 
-on structural dynamic responses, using the Vlacho-Papakonstantinou-Deodatis synthetic ground motion model. For a Sampling or Forward propagation uncertainty analysis, the user would perform the following steps:
+on structural dynamic responses, using the Vlachos-Papakonstantinou-Deodatis synthetic ground motion model. For a Sampling or Forward propagation uncertainty analysis, the user would perform the following steps:
 
 1. Upon opening the application the **UQ** tab will be highlighted. In this panel, keep the **UQ engine** as that selected, 
    i.e. Dakota, and the **UQ Method Category** as **Forward Propagation**, and the **Method** field as **LHS** 
@@ -48,7 +48,7 @@ on structural dynamic responses, using the Vlacho-Papakonstantinou-Deodatis synt
 
 .. figure:: figures/sim.png
    :align: center
-   :alt: Screenshot of a software interface titled "EE-UQ: Response of Building to Earthquake". The interface includes a section labeled "Building Model Generator" with options for software selection and input fields for an input script, response nodes, spatial dimension, and degrees of freedom at nodes. A navigation panel on the left lists categories like UQ, SIM, EVT, FEM, EDP, RV, and RES. At the bottom are buttons for running simulations, including "RUN", "RUN at DesignSafe", and "GET from DesignSafe". There is also a "Login" button on the top right corner of the window.
+   :alt: Screenshot of a software interface titled "EE-UQ: Response of Building to Earthquake". The interface includes a section labeled "Building Model Generator" with options for software selection and input fields for an input script, response nodes, spatial dimension, and degrees of freedom at nodes. A navigation panel on the left lists categories like UQ, SIM, EVT, FEM, EDP, RV, and RES. At the bottom are buttons for running simulations, including "RUN", "RUN at DesignSafe", and "GET from DesignSafe". There is also a "Login" button in the top right corner of the window.
    :width: 100%
    :figclass: align-center
 
@@ -121,18 +121,18 @@ ratio (:math:`1-PID-1-1`).
 Dabaghi-Der Kiureghian Method
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The Dabaghi-Kiureghian model looks into the near-fault ground motion pulse feature and can generate pairs of 
+The Dabaghi-Der Kiureghian model looks into the near-fault ground motion pulse feature and can generate pairs of 
 synthetic pulse-like and non-pulse-like components in appropriate proportions. In this example, we would like to 
 (1) understand the effects from the randomness in the site-source distance (as similar 
 but comparable to the first example above) and (2) compare the differences in structural responses due to the 
 distinct characteristics of pulse-like and non-pulse-like records.
 
 1. All the configurations are maintained the same as the first example except in the **EVT** panel, we select the 
-   "Dabaghi & Der Kiureghian (2018)" method. We first fix the fault type to "Stike-Slip" and enable both the 
+   "Dabaghi & Der Kiureghian (2018)" method. We first fix the fault type to "Strike-Slip" and enable both the 
    pulse-like and non-pulse-like records.
 
 2. For the Depth to the Top of the Rupture Plane, we specify 0.0 km as a constant; and for the other earthquake parameters (
-   moment magnitude,  closest distance to the site, parallel distance, and angel), we define their values as the figure 
+   moment magnitude, the closest distance to the site, parallel distance, and angel), we define their values as the figure 
    shown below. The random variable average shear-wave velocity (V) will be specified in the **RV** panel.
 
 .. figure:: figures/evt2.png
