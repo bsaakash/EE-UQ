@@ -32,9 +32,9 @@ The exercise will use both the MDOF, :ref:`lblMDOFSIM`,  and OpenSees, :ref:`lbl
    
    1. The first lines containing ``pset`` will be read by the application when the file is selected and the application will autopopulate the random variables ``w``, ``wR``, and ``k`` in the **RV**  panel with these same variable names. 
 
-.. warning::
+.. .. warning::
 
-   Do not place the file in your root, downloads, or desktop folder as when the application runs it will copy the contents on the directories and subdirectories containing this file multiple times (a copy will be made for each sample specified). If you are like us, your root, Downloads or Documents folders contain and awful lot of files and when the backend workflow runs you will slowly find you will run out of disk space!
+..    Do not place the file in your root, downloads, or desktop folder as when the application runs it will copy the contents on the directories and subdirectories containing this file multiple times (a copy will be made for each sample specified). If you are like us, your root, Downloads or Documents folders contain and awful lot of files and when the backend workflow runs you will slowly find you will run out of disk space!
 
 Sampling Analysis with El Centro
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

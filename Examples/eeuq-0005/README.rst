@@ -16,12 +16,12 @@ represented by synthetic ground motion records based on two methods ([VPD18]_, [
 
 The exercise will use the :ref:`lblOpenSeesSIM` structural generators. For the OpenSees generator the following model script, :eeuq-0005:`ShearBuilding3.tcl <src/ShearBuilding3.tcl>` is used:
 
-.. literalinclude:: ShearBuilding3.tcl
+.. literalinclude:: src/ShearBuilding3.tcl
    :language: tcl
 
-.. warning::
+.. .. warning::
 
-   Do not place the file in your root, downloads, or desktop folder as when the application runs it will copy the contents on the directories and subdirectories containing this file multiple times (a copy will be made for each sample specified). If you are like us, your root, Downloads or Documents folders contain an awful lot of files and when the backend workflow runs you will slowly find you will run out of disk space!
+..    Do not place the file in your root, downloads, or desktop folder as when the application runs it will copy the contents on the directories and subdirectories containing this file multiple times (a copy will be made for each sample specified). If you are like us, your root, Downloads or Documents folders contain an awful lot of files and when the backend workflow runs you will slowly find you will run out of disk space!
 
 Vlachos-Papakonstantinou-Deodatis Method
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
